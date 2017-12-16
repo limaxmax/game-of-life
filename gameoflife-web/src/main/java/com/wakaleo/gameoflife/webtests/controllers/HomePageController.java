@@ -4,21 +4,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
- /**
- * Wakaleo Consulting - John Ferguson Smart
- * Game of life, demonstration application for Jenkins: The Definitive Guide
+/**
+ * This class rocks.
  *
- * HomePageController.java
- * Controller to navigate to the main page
+ * @author johnsmart
  */
 @Controller
 public class HomePageController {
+    // FIXME: do something nicer for the home page
     @RequestMapping("/")
     public ModelAndView index() {
         return new ModelAndView("home");
     }
 
-	// Clicking the "home" text loads the main page
     @RequestMapping("/home")
     public ModelAndView home() {
         return new ModelAndView("home");
